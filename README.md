@@ -112,6 +112,47 @@ Corpo da resposta:
   "message": "O usuário não foi encontrado"
 }
 `
+
+## Atualização de dados
+- URL: `/person/:id`
+- Método: `PATCH`
+- Parâmetros da URL:
+`id` (String, obrigatório): ID da pessoa que deseja atualizar.
+- Parâmetros do corpo da requisição:
+- `name` (String): Nome atualizado da pessoa.
+- `salary` (Number): Salário atualizado da pessoa.
+- `approved` (Boolean): Indica se a pessoa está aprovada.
+  
+Exemplo de requisição:
+ ```json
+  {
+  "name": "John Doe",
+  "salary": 3000,
+  "approved": true
+}
+```
+- Resposta de sucesso
+- Código: 200 (OK)
+- Corpo da resposta:
+ ```json
+{
+  "name": "John Doe",
+  "salary": 3000,
+  "approved": true
+}
+```
+- Resposta de erro:
+- Código: 422 (Unprocessable Entity)
+- Corpo da resposta:
+ ```json
+{
+  "message": "Usuário não foi atualizado"
+}
+```
+
+## Deleçao de dados 
+
+
    
 
 
