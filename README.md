@@ -49,30 +49,30 @@ A API possui os seguintes endpoints para manipulação dos dados:
     "approved": true
   }
 
-  Resposta de sucesso:
+ ## Resposta de sucesso:
 Código: 201 (Created)
 Corpo da resposta:
 
-{
+`{
   "message": "Pessoa inserida com sucesso"
-}
+}`
 
 Resposta de erro:
 Código: 422 (Unprocessable Entity)
 Corpo da resposta:
 
-{
+`{
   "error": "nome"
-}
+}`
 
-Leitura de dados
-URL: /person
-Método: GET
+## Leitura de dados
+URL: `/person`
+Método: `GET`
 Resposta de sucesso:
 Código: 200 (OK)
 Corpo da resposta
 
-[
+`[
   {
     "_id": "60e2bafcc7e3a8a89e78a6b7",
     "name": "John Doe",
@@ -85,7 +85,7 @@ Corpo da resposta
     "salary": 3000,
     "approved": false
   }
-]
+]`
 
 
 
