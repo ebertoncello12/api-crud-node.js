@@ -74,7 +74,7 @@ Corpo da resposta:
 - Corpo da resposta:
 - Exemplo de requisição:
   ```json
-  [
+  
   {
     "_id": "60e2bafcc7e3a8a89e78a6b7",
     "name": "John Doe",
@@ -87,5 +87,5 @@ Corpo da resposta:
     "salary": 3000,
     "approved": false
   }
-]
+
  
