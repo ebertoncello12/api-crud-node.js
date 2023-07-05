@@ -72,7 +72,9 @@ Corpo da resposta:
 - Resposta de sucesso:
 - Código: 200 (OK)
 - Corpo da resposta:
-- `  [
+- Exemplo de requisição:
+  ```json
+  [
   {
     "_id": "60e2bafcc7e3a8a89e78a6b7",
     "name": "John Doe",
@@ -86,4 +88,4 @@ Corpo da resposta:
     "approved": false
   }
 ]
- `
+ 
