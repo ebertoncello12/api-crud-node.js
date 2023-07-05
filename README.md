@@ -72,20 +72,20 @@ Resposta de sucesso:
 Código: 200 (OK)
 Corpo da resposta
 
-`[
+[
   {
-    "_id": "60e2bafcc7e3a8a89e78a6b7",
-    "name": "John Doe",
-    "salary": 2500,
-    "approved": true
+    `"_id": "60e2bafcc7e3a8a89e78a6b7",`
+    `"name": "John Doe",`
+  `  "salary": 2500,`
+   `"approved": true`
   },
   {
-    "_id": "60e2bb12c7e3a8a89e78a6b8",
-    "name": "Jane Smith",
-    "salary": 3000,
-    "approved": false
+    `"_id": "60e2bb12c7e3a8a89e78a6b8",`
+  `  "name": "Jane Smith",`
+   ` "salary": 3000,`
+  `  "approved": false`
   }
-]`
+]
 
 
 
