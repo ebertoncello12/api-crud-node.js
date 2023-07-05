@@ -151,6 +151,33 @@ Exemplo de requisição:
 ```
 
 ## Deleçao de dados 
+-URL: `/person/:id`
+-Método: `DELETE`
+-Parâmetros da URL:
+-`id`(String, obrigatório): ID da pessoa que deseja excluir.
+-Resposta de sucesso:
+-Código: 200 (OK)
+-Corpo da resposta:
+
+ ```json
+{
+  "message": "O usuário foi removido com sucesso"
+}
+```
+- Resposta de erro:
+- Código: 422 (Unprocessable Entity)
+- Corpo da resposta:
+
+ ```json
+{
+  "message": "O usuário não foi encontrado"
+}
+```
+
+## Contribuiçao 
+- Se você deseja contribuir com este projeto, sinta-se à vontade para enviar pull requests ou abrir issues para relatar problemas ou sugestões.
+  
+
 
 
    
