@@ -65,27 +65,109 @@ Corpo da resposta:
   "error": "nome"
 }`
 
-## Leitura de dados
-URL: `/person`
-Método: `GET`
+Leitura de dados
+URL: /person
+Método: GET
 Resposta de sucesso:
 Código: 200 (OK)
-Corpo da resposta
-
+Corpo da resposta:
+json
+Copy code
 [
   {
-    `"_id": "60e2bafcc7e3a8a89e78a6b7",`
-    `"name": "John Doe",`
-  `  "salary": 2500,`
-   `"approved": true`
+    "_id": "60e2bafcc7e3a8a89e78a6b7",
+    "name": "John Doe",
+    "salary": 2500,
+    "approved": true
   },
   {
-    `"_id": "60e2bb12c7e3a8a89e78a6b8",`
-  `  "name": "Jane Smith",`
-   ` "salary": 3000,`
-  `  "approved": false`
+    "_id": "60e2bb12c7e3a8a89e78a6b8",
+    "name": "Jane Smith",
+    "salary": 3000,
+    "approved": false
   }
 ]
-
+Leitura de um dado específico
+URL: /person/:id
+Método: GET
+Parâmetros da URL:
+id (String, obrigatório): ID da pessoa que deseja obter.
+Resposta de sucesso:
+Código: 200 (OK)
+Corpo da resposta:
+json
+Copy code
+{
+  "_id": "60e2bafcc7e3a8a89e78a6b7",
+  "name": "John Doe",
+  "salary": 2500,
+  "approved": true
+}
+Resposta de erro:
+Código: 422 (Unprocessable Entity)
+Corpo da resposta:
+json
+Copy code
+{
+  "message": "O usuário não foi encontrado"
+}
+Atualização de dados
+URL: /person/:id
+Método: PATCH
+Parâmetros da URL:
+id (String, obrigatório): ID da pessoa que deseja atualizar.
+Parâmetros do corpo da requisição:
+name (String): Nome atualizado da pessoa.
+salary (Number): Salário atualizado da pessoa.
+approved (Boolean): Indica se a pessoa está aprovada.
+Exemplo de requisição:
+json
+Copy code
+{
+  "name": "John Doe",
+  "salary": 3000,
+  "approved": true
+}
+Resposta de sucesso:
+Código: 200 (OK)
+Corpo da resposta:
+json
+Copy code
+{
+  "name": "John Doe",
+  "salary": 3000,
+  "approved": true
+}
+Resposta de erro:
+Código: 422 (Unprocessable Entity)
+Corpo da resposta:
+json
+Copy code
+{
+  "message": "Usuário não foi atualizado"
+}
+Exclusão de dados
+URL: /person/:id
+Método: DELETE
+Parâmetros da URL:
+id (String, obrigatório): ID da pessoa que deseja excluir.
+Resposta de sucesso:
+Código: 200 (OK)
+Corpo da resposta:
+json
+Copy code
+{
+  "message": "O usuário foi removido com sucesso"
+}
+Resposta de erro:
+Código: 422 (Unprocessable Entity)
+Corpo da resposta:
+json
+Copy code
+{
+  "message": "O usuário não foi encontrado"
+}
+Contribuição
+Se você deseja contribuir com este projeto, sinta-se à vontade para enviar pull requests ou abrir issues para relatar problemas ou sugestões.
 
 
