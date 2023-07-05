@@ -88,8 +88,28 @@ Corpo da resposta:
     "approved": false
   }
 `
-  ## Resposta de sucesso:
-Código: 201 (Created)
-Corpo da resposta:
+  ## Leitura de um dado específico (ID)
+- URL: `/person/:id`
+- Método: `GET`
+- Parametros de URL:
+- `id` (String, obrigatório): ID da pessoa que deseja obter.
+- Resposta de sucesso :
+- ódigo: 200 (OK)
+- Corpo da resposta:
+   ```json
+  {
+  "_id": "60e2bafcc7e3a8a89e78a6b7",
+  "name": "John Doe",
+  "salary": 2500,
+  "approved": true
+}
+
+ ## Resposta de Erro:
+ - Código: 422 (Unprocessable Entity)
+ - Corpo da resposta:
+
+ 
+ 
+
 
  
