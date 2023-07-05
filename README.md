@@ -107,9 +107,13 @@ Corpo da resposta:
  ## Resposta de Erro:
  - Código: 422 (Unprocessable Entity)
  - Corpo da resposta:
+ `
+ {
+  "message": "O usuário não foi encontrado"
+}
+`
+   
 
- 
- 
 
 
  
