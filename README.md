@@ -87,5 +87,9 @@ Corpo da resposta:
     "salary": 3000,
     "approved": false
   }
+`
+  ## Resposta de sucesso:
+Código: 201 (Created)
+Corpo da resposta:
 
  
